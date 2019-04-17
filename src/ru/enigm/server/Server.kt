@@ -8,12 +8,12 @@ import java.util.*
 // port to listen connection
 val PORT = 33222
 
+/**
+ * Class implementing http server functions
+ *
+ * @author Ural Nigmatullin
+ */
 class Server(var connect: Socket) : Runnable {
-
-    val WEB_ROOT = File("resources")
-    val DEFAULT_FILE = "index.html"
-    val FILE_NOT_FOUND = "404.html"
-    val METHOD_NOT_SUPPORTED = "not_supported.html"
 
     override fun run() {
         //we manage our particular client connection
