@@ -1,5 +1,7 @@
-package ru.enigm.server
+package ru.enigm.server.front
 
+import ru.enigm.server.front.controller.PORT
+import ru.enigm.server.front.controller.Server
 import java.io.IOException
 import java.net.ServerSocket
 import java.util.*
